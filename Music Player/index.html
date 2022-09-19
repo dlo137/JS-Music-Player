@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Player</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+<!--home section/wrapper-->
+
+    <section class="home-section">
+
+        <!--carousel section-->
+        <div class="carousel">
+            <img src="assets/images/cover 1.png" alt="" class="active">
+            <img src="assets/images/cover 2.png" alt="">
+            <img src="assets/images/cover 3.png" alt="">
+            <img src="assets/images/cover 4.png" alt="">
+            <img src="assets/images/cover 5.png" alt="">
+        </div>
+
+        <!--playlist-->
+        <h1 class="heading">Recently Played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover 9.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top Interactions</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 2.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">BTS collection</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 10.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Hollywood hits</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 11.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top 50</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 5.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">UB40</p>
+            </div>
+        </div>
+
+        <!-- Based on your listening -->
+        <h1 class="heading">Based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover 11.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top Interactions</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 12.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">BTS collection</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 13.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Hollywood hits</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 1.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top 50</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="assets/images/cover 3.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Sublime</p>
+            </div>
+        </div>
+    </section>
+
+<!--active music player wrapper-->
+
+    <section class="music-player-section ">
+        <img src="assets/images/back.png" alt="" class="back-btn icon hide">
+        <img src="assets/images/nav.png" alt="" class="nav-btn icon hide">
+
+        <h1 class="current-song-name">Song 1</h1>
+        <p class="artist-name hide">Artist 1</p>
+
+        <img src="assets/images/cover 1.png"  class="cover hide" alt="">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00:00</p>
+            <p class="duration hide">00:00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value = "1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+<!--playlist wrapper-->
+
+    <section class="playlist" >
+        <img src="assets/images/back.png" alt="" class="back-btn icon">
+
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/Amber.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Amber</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/Rain.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Have You Ever Seen the Rain?</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/positive.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Positive Vibrations</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/oneLove.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">One Love</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/getLove.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Come and Get Your Love</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/theIntruders.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Turning the Hands of Time</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/motorbike.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Motorbike</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/redWine.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Red Wine</p>
+        </div>
+    </section>
+
+
+        
+        <script src="data.js" ></script>
+        <script src="app.js" ></script>
+
+    </body>
+</html>
